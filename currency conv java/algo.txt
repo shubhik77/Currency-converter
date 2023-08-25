@@ -1,0 +1,46 @@
+
+Certainly, let's break down the code line by line and explain the role of each component, including the usage of the HashMap:
+
+Algorithm for above code:
+
+Import necessary classes.
+
+Define the Main class that will contain our currency converter program.
+
+Declare a private instance variable exchangeRates of type Map<String, Double>. This map will store exchange rates for various currencies.
+
+Create a constructor Main() where we initialize the exchangeRates map with predefined values. This map acts as a lookup table for exchange rates.
+
+Define a method convertCurrency(double amount, String fromCurrency, String toCurrency) which calculates the converted amount from one currency to another based on exchange rates.
+
+In the main method:
+
+Instantiate a Main object named converter.
+Create a Scanner object named scanner to read user input.
+Display available currencies to the user.
+
+Prompt the user to enter the amount they want to convert.
+
+Read the user's input as a double value and assign it to the amount variable.
+
+Consume the newline character left by nextDouble() to avoid issues with the subsequent nextLine().
+
+Prompt the user to enter the source currency (e.g., USD).
+
+Read the user's input as a String and convert it to uppercase using toUpperCase(). Assign it to the fromCurrency variable.
+
+Prompt the user to enter the target currency (e.g., EUR).
+
+Read the user's input as a String and convert it to uppercase using toUpperCase(). Assign it to the toCurrency variable.
+
+Call the convertCurrency method with the provided inputs to calculate the converted amount.
+
+Print the calculated converted amount along with the target currency.
+
+Close the Scanner to release resources.
+
+In this code, the HashMap named exchangeRates is used to store the exchange rates between different currencies. It allows us to quickly retrieve exchange rates using the currency code as the key. This simplifies the currency conversion process by providing easy access to the necessary exchange rates.
+
+
+
+
